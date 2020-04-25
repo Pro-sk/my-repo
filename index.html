@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marketing</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        body
+        {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-trigger").dropdown();
+            $('.sidenav').sidenav();
+            $('.slider').slider({
+                indicators:false,
+                height:500,
+                interval:4000
+            });
+            $(".sidenav li a").click(function(){
+                $('.sidenav').sidenav({
+                    display:'none'
+                });
+            })
+            $('.scrollspy').scrollSpy();
+            $('.collapsible').collapsible();
+            $('.modal').modal();
+            $('.fixed-action-btn').floatingActionButton();
+
+            $(window).resize(function(){
+                var width = $(window).width();
+                if(width<=400)
+                {
+                    $(".p1>div").removeClass("small");
+                    $(".brand-logo>img").css({
+                        height:'45px',
+                        margin:'5px'
+                    });
+                    $('.slider').slider({
+                        indicators:false,
+                        height:300,
+                        interval:4000
+                    });
+                }
+                else
+                {
+                    $(".p1>div").addClass("small");
+                    $(".brand-logo>img").css({
+                        height:'60px',
+                        margin:'2px'
+                    });
+                    $('.slider').slider({
+                        indicators:false,
+                        height:500,
+                        interval:4000
+                    });
+                }
+            });
+            
+            
+        });
+    </script>
+
+
+
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue accent-3">
+                <a href="index.html" class="brand-logo"><img src="Marketing\marketing.PNG" alt="Logo" style="width:110px;height:60px;margin:2px 40px;"></a>
+                <a href="#!" data-target="sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" data-target="info" class="dropdown-trigger">INFORMATION<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#whyus" class="modal-trigger">WHY US</a></li>
+                    <li><a href="#getintouch" class="modal-trigger">GET IN TOUCH</a></li>
+                    <li><a href="#contactus">CONTACT US</a></li>
+                </ul>
+                <!--   information dropdown    -->
+
+                <ul class="dropdown-content" id="info">
+                    <li><a href="#aboutcompany" class="modal-trigger">About Company</a></li>
+                    <li><a href="#aboutleader" class="modal-trigger">About Leader</a></li>
+                </ul>
+
+                <!--   end     -->
+
+                <!--   services dropdown    -->
+
+             <!--   <ul class="dropdown-content" id="services">
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Message Marketing</a></li>
+                        <li><a href="#">Inbound Customer Services</a></li>
+                        <li><a href="#">Outbound Customer Services</a></li>
+                        <li><a href="#">Email Marketing</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Event Management & Marketing</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                    -->
+    
+                    <!--   end     -->
+            </div>
+        </nav>
+    </div>
+    <!--     side navbar   -->
+
+    <ul class="sidenav" id="sidenav">
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="no-padding">
+                        <a class="collapsible-header">Information<i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#aboutcompany"  class="modal-trigger">About Company</a></li>
+                                <li><a href="#aboutleaders"  class="modal-trigger">About Leaders</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#whyus"  class="modal-trigger">Why Us</a></li>
+            <li><a href="#getintouch"  class="modal-trigger">Get In Touch</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+
+        <!--    end    -->
+
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="Marketing/PicsArt_06-22-11.45.26.jpeg" style="background-size:100% 100%"> <!-- random image -->
+              </li>
+              <li>
+                <img src="Marketing/PicsArt_06-22-11.59.04.jpeg" style="background-size:100% 100%"> <!-- random image -->
+              </li>
+              <li>
+                <img src="Marketing/PicsArt_06-22-12.01.47.jpeg" style="background-size:100% 100%"> <!-- random image -->
+              </li>
+              <li>
+                <img src="Marketing/PicsArt_06-22-12.49.45.jpeg" style="background-size:100% 100%"> <!-- random image -->
+              </li>
+              <li>
+                <img src="Marketing/PicsArt_06-22-01.07.02.jpeg" style="background-size:100% 100%"> <!-- random image -->
+              </li>
+            </ul>
+          </div>
+
+
+    <h3 class="center-align">Services</h3>
+    <div class="row scrollspy" id="services">
+        <div class="col l3 s12 m4">
+            <div class="card center-align medium">
+                <div class="card-image circle">
+                   <a href="#modal1" class="modal-trigger"><img src="Marketing/digital marketing.png" alt="" class="circle responsive-img" style="width:60%;height:auto;margin:auto"></a> 
+                </div>
+                <div class="card-content">
+                    <p class="card-title">
+                        Digital Marketing
+                    </p>
+                    <p>the digital marketing is more cost effective than traditional way.it provied 300% more chance to expand your business.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col l3 s12 m4">
+            <div class="card center-align medium">
+                <div class="card-image circle">
+                   <a href="#modal2" class="modal-trigger"><img src="Marketing/sms.png" alt="" class="circle responsive-img" style="width:60%;height:auto;margin:auto"></a> 
+                </div>
+                <div class="card-content">
+                    <p class="card-title">
+                        Message Marketing
+                    </p>
+                    <p>it is an way to occupy the audiance which is looking for you</p>
+                </div>
+            </div>
+        </div>
+        <div class="col l3 s12 m4">
+            <div class="card center-align medium">
+                <div class="card-image circle">
+                   <a href="#modal3" class="modal-trigger"><img src="Marketing/inbound-and-outbound-phone-calls.jpg" alt="" class="circle responsive-img" style="width:60%;height:auto;margin:auto"></a> 
+                </div>
+                <div class="card-content">
+                    <p class="card-title">
+                        Inbound Customer Services
+                    </p>
+                    <p>It is an way to provied best servies to customer and help to solved query of customer related to their need and purpose</p>
+                </div>
+            </div>
+        </div>
+        <div class="col l3 s12 m4">
+            <div class="card center-align medium">
+                <div class="card-image circle">
+                <a href="#modal7" class="modal-trigger"><img src="Marketing/event managment.jpg" alt="" class="circle responsive-img" style="width:60%;height:auto;margin:auto"></a> 
+                </div>
+                <div class="card-content">
+                    <p class="card-title">
+                        Event Management & Marketing
+                    </p>
+                    <p>We help you to manage your event and also market your event,marketing your business event is the way in which you capture your customer or partner for your event </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l3 s12 m4">
+            <div class="card center-align medium">
+                <div class="card-image circle">
+                   <a href="#modal5" class="modal-trigger"><img src="Marketing/email.jpg" alt="" class="circle responsive-img" style="width:60%;height:auto;margin:auto"></a> 
+                </div>
+                <div class="card-content">
+                    <p class="card-title">
+                        Email Marketing
+                    </p>
+                    <p>Choosing the right email marketing service can have a significant impact on the success of your marketing campaign. </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col l3 s12 m4">
+                <div class="card center-align medium">
+                    <div class="card-image circle">
+                    <a href="#modal6" class="modal-trigger"><img src="Marketing/web development.jpg" alt="" class="circle responsive-img" style="width:60%;height:auto;margin:auto"></a> 
+                    </div>
+                    <div class="card-content">
+                        <p class="card-title">
+                            Web Development
+                        </p>
+                        <p>Web development is basic need for your business to grow your business online today </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 s12 m4">
+                    <div class="card center-align medium">
+                        <div class="card-image circle">
+                           <a href="#modal4" class="modal-trigger"><img src="Marketing/inbound-and-outbound-phone-calls.jpg" alt="" class="circle responsive-img" style="width:60%;height:auto;margin:auto"></a> 
+                        </div>
+                        <div class="card-content">
+                            <p class="card-title">
+                                Outbound Customer Services
+                            </p>
+                            <p>It is an way to provide best services to customer and help to solved query of customer related to their need and purpose</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col l3 s12 m4">
+                <div class="card center-align medium">
+                    <div class="card-image circle">
+                    <a href="#modal8" class="modal-trigger"><img src="Marketing/vedo.jpg" alt="" class="circle responsive-img" style="width:60%;height:auto;margin:auto"></a> 
+                    </div>
+                    <div class="card-content">
+                        <p class="card-title">
+                            Vedio Making & Marketing
+                        </p>
+                        <p>Display advertising is a type of online advertising that comes in several forms, including banner ads, rich media and more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--     Model Details       -->
+
+
+        <!-- Modal Structure -->
+
+        <!--   about company      -->
+
+
+        <div id="aboutcompany" class="modal">
+            <div class="modal-content">
+            <h4>About Company</h4>
+            <div class="card-panel">
+                <img src="Marketing/marketing.PNG" alt="" class="responsive-img">
+                <p>
+                    It is an type of bpo and marketing company ,which manage your business and build relationship between you and your customer
+                </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+        <div id="aboutleader" class="modal">
+            <div class="modal-content">
+            <h4>About Leaders</h4>
+            <div class="card-panel">
+                <div class="row">
+                    <div class="s12 m6 l6">
+                        <div class="card horizontal">
+                            <div class="card-image" style="padding:10px;">
+                            <img src="Marketing/deepak.jpeg" class="responsive-img" style="width:200px;height:240px;">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <ul>
+                                        <li>Name : Mr.Deepak Gupta</li><br>
+                                        <li>Email : deepaksg2020@gmail.com</li><br>
+                                        <li>Phone : +91 9082427857</li><br>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s12 m6 l6">
+                        <div class="card horizontal">
+                            <div class="card-image" style="padding:10px;">
+                            <img src="Marketing/anil.jpeg" class="responsive-img" style="width:200px;height:240px;">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <ul>
+                                        <li>Name : Mr.Anil Pal</li><br>
+                                        <li>Email : anilpal9270@gmail.com</li><br>
+                                        <li>Phone : +91 8097518982</li><br>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+
+        <!--     get in touch form       -->
+
+        <div id="getintouch" class="modal">
+            <div class="modal-content">
+            <h4>Get In Touch</h4>
+            <div class="card-panel">
+                <div class="row">
+                    <form class="col s12" action="localhost:mail.php" method="post">
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" class="validate" required>
+                                <label for="icon_prefix">First Name</label>
+                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="icon_telephone" type="number" class="validate" min="1111111111" max="9999999999" required>
+                                <label for="icon_telephone">Telephone</label>
+                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <i class="material-icons prefix">mail</i>
+                                <input id="icon_email" type="email" class="validate" required>
+                                <label for="icon_email">Email</label>
+                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <i class="material-icons prefix">message</i>
+                                <input type="text" id="message" class="validate" required> 
+                                <label for="message">Message</label>
+                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                            </div>
+                            <input type="submit" name="submit" class="btn blue validate right" value="Submit" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+
+
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <h4>Digital Marketing</h4>
+            <div class="card-panel">
+                <p>With the change and evolutions our whole of modern technologies,the people shifted from physical way to digital way for promoting business... businesses are either changing their business models to an online one, or breifing up existing marketing efforts with digital marketing strategies – in an attempt to capture a growing and very lucrative online marketplace.
+                    For it is the process of attracting audiences online that will spell the difference between a successfully thriving business – and a failed one. Even if you receive tons of daily traffic to your website, they would not amount to anything unless they convert to leads or sales. 
+                    the digital marketing is more cost effective than traditional way.it provied 300% more chance to expand your business.
+                </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+         <div id="modal2" class="modal">
+            <div class="modal-content">
+            <h4>Message Marketing</h4>
+            <div class="card-panel">
+                <p>This is the fundamental reason we develop marketing messages, and why they are important (if they are developed and delivered correctly). the purpose of a marketing message is to get the attention of potential customer, and creating a preference for your particular product or service for that customer's need(s).
+                        Online marketing is the practice of leveraging web-based channels to spread a message about a company’s brand, products, or services to its potential customers. 
+                        it is an way to occupy the audiance which is looking for you                    
+                </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+            <h4>Inbound Customer Services</h4>
+            <div class="card-panel">
+                <p>It is an way to provide best services to customer and help to solved query of customer related to their need and purpose
+                    Inbound and outbound customer service reps provide various forms of support for customer's by telephone. Inbound customer service is the traditional approach to telephone-based customer service. ... Outbound customer service allows managers use of agents during quiet periods, increasing overall productivity.
+                    it help for increase your customer responce towards your business over night and for expand your business                                   
+                </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+            <h4>Outbound Customer Services</h4>
+            <div class="card-panel">
+                <p>It is an way to provide best services to customer and help to solved query of customer related to their need and purpose
+                    Inbound and outbound customer service reps provide various forms of support for customer's by telephone. Inbound customer service is the traditional approach to telephone-based customer service. ... Outbound customer service allows managers use of agents during quiet periods, increasing overall productivity.
+                    it help for increase your customer responce towards your business over night and for expand your business                                   
+                </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+            <h4>Email Marketing</h4>
+            <div class="card-panel">
+                <p>Is email marketing a priority for your business in 2010-1029
+                    ? Are you looking for the best email marketer
+                    Choosing the right email marketing service can have a significant impact on the success of your marketing campaign. 
+                    it  increasing overall productivity. and customer base in few days
+                    Online marketing is the practice of leveraging web-based channels to spread a message about a company’s brand, products, or services to its potential customers.                        
+                </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+            <h4>Web Developement</h4>
+            <div class="card-panel">
+                <p>web development is basic need for your business to grow your business online today
+                        it help you to buid your good relationship towords your customer
+                        The objective of marketing is to reach potential customers through the channels where they spend time reading, searching, shopping, or socializing online.It only happened when you have a online store or web side
+                        Widespread adoption of the Internet for business and personal use has generated many new channels for advertising and marketing engagement,.                                
+                </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+            <h4>Event Management & Marketing</h4>
+            <div class="card-panel">
+                <p>We help you to manage your event and also market your event,marketing your business event is the way in which you capture your customer or patner for your event 
+                    Companies can benefit from promotional events as a way to communicate with current and potential customers. ... They can also invite their audience to their events and reach them at the actual event.
+                    we can  do effective event promotion, planning, management and monetization.
+                </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+        <div id="modal8" class="modal">
+            <div class="modal-content">
+            <h4>Video Making & Marketing</h4>
+            <div class="card-panel">
+                <p>Display advertising is a type of online advertising that comes in several forms, including banner ads, rich media and more. Unlike text-based ads, display advertising relies on elements such as images, audio and video to communicate an advertising message.it
+                    is one of the most popular types of online marketing. A visual-based means of promoting your brand                    
+                </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+
+        <!--   Why Us   -->
+
+         <div id="whyus" class="modal">
+            <div class="modal-content">
+            <h4>Why Us</h4>
+            <div class="card-panel">
+                <ul>
+                    <i class="fa fa-arrow-right material-icons left orange-text"></i><li>Increase Your business and it's capability</li>
+                    <i class="fa fa-arrow-right material-icons left orange-text"></i><li>Special focus on each customer and their services</li>
+                    <i class="fa fa-arrow-right material-icons left orange-text"></i><li>Extremely high level of integrity and hard work</li>
+                    <i class="fa fa-arrow-right material-icons left orange-text"></i><li>We build your brand for market</li>
+                    <i class="fa fa-arrow-right material-icons left orange-text"></i><li>Build relationship between you and your customer</li>
+                    <i class="fa fa-arrow-right material-icons left orange-text"></i><li>Create market place for your business</li>
+                    <i class="fa fa-arrow-right material-icons left orange-text"></i><li>We are innovate ,passionate about work </li>
+                </ul>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+
+
+        <!--     Social Media       -->
+
+
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a href="https://www.facebook.com/Marketingway-2055960298040328/?modal=admin_todo_tour" target="_blank" class="btn-floating blue"><i class="fa fa-facebook material-icons "></i></a></li>
+                <li><a href="https://www.instagram.com/manymarketingway/?igshid=1ww8o2dgvay0u" class="btn-floating pink accent-4" target="_blank"><i class="fa fa-instagram material-icons"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=919082427857" class="btn-floating green" target="_blank"><i class="fa fa-whatsapp material-icons"></i></a></li>
+                <li><a href="mailto:manymarketingway@gmail.com" class="btn-floating red accent-2"><i class="fa fa-envelope-o material-icons"></i></a></li>
+            </ul>
+        </div>
+
+
+
+
+        <!--     Footer       -->
+
+        <div class="row black accent-2 white-text p1" style="padding:10px">
+            <div class="col small black s12 l3 m6" style="padding:20px">
+                <img src="Marketing/marketing.PNG" alt="Logo" class="responsive-img">
+            </div>
+            <div class="card small black col s12 l3 m6" style="padding:20px">
+                <h4 class="card-title">Our Services</h4>
+                <ul>
+                    <li><i class="fa fa-arrow-right material-icons left orange-text"></i>Marketing-way is an type of BPO and Marketing company</li><br>
+                    <li><i class="fa fa-arrow-right material-icons left orange-text"></i>Which Build your business for your market as per customer requirement</li>
+                </ul>
+            </div>
+            <div class="card scrollspy small black col s12 l3 m6" style="padding:20px" id="contactus">
+                <h4 class="card-title">Contact Us</h4>
+                <ul>
+                    <li>Phone No : 9082427857 / 8097518982</li><br>
+                    <li>Email : manymarketingway@gmail.com</li><br>
+                    <li>Address : Kalyan Mumbai Maharashhtra India</li><br>
+                </ul>
+            </div>
+            <div class="card small black col s12 l3 m6" style="padding:20px">
+                <h4 class="card-title">Follow Us</h4>
+                    <a href="https://www.facebook.com/Marketingway-2055960298040328/?modal=admin_todo_tour" target="_blank" class="blue btn-floating"><i class="fa fa-facebook material-icons"></i></a>
+                    <a href="https://www.instagram.com/manymarketingway/?igshid=1ww8o2dgvay0u" target="_blank" class="btn-floating pink accent-4" style="margin:auto 20px;"><i class="fa fa-instagram material-icons"></i></a>
+                    <a href="mailto:manymarketingway@gmail.com" class="btn-floating red accent-2"><i class="fa fa-envelope-o material-icons"></i></a>
+            </div>
+
+        </div>
+</body>
+</html>
